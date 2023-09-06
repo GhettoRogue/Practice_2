@@ -4,11 +4,12 @@ var account = 0;
 foreach (var purchase in purchases)
 {
     account += purchase;
-    Console.WriteLine($"Обслужен клиент на сумму {purchase}$");
-    Console.WriteLine($"Текущий баланс: {account}$");
+    Console.WriteLine($"Клиент обслужен на сумму {purchase}$");
+    Console.WriteLine($"Баланс: {account}$");
+
     Console.ReadKey();
     Console.Clear();
 }
 
-Console.WriteLine("Очередь клиентов обслужена!");
+Console.WriteLine("Клиенты обслужены!");
 Console.WriteLine($"Итоговый баланс: {account}$");
